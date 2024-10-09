@@ -1,0 +1,21 @@
+10 of the Html tags I used
+1. p
+2. a
+3. link
+4. meta
+5. script
+6. h1
+7. hr
+8. div
+9. ul
+10. li
+
+5 of the Css selectors I used
+1. background-color
+2. color
+3. padding
+4. border
+5. display
+
+I chose to use the javascript i created in trivia since java spript is really hard for me, so i just created function to check for right answer
+Also for bootstrap i decided to use the buttons since they were the only thing that i could use bootstrap for

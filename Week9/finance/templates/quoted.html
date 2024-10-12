@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Qouted
+{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" style="padding: 15px">Name</th>
+                <th scope="col" style="padding: 15px">Price</th>
+                <th scope="col" style="padding: 15px">Symbol</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td style="padding: 15px">{{value["name"]}}</td>
+                    <td style="padding: 15px">{{value["price"] | usd}}</td>
+                    <td style="padding: 15px">{{value["symbol"]}}</td>
+                </tr>
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Retrieve Cash
+{% endblock %}
+
+{% block main %}
+
+    <form action="/retrieve_cash" method="post">
+        <input type="number" name="amount" placeholder="Amount" required>
+        <button class="btn btn-primary" type="submit">Retrieve Cash</button>
+    </form>
+
+{% endblock %}

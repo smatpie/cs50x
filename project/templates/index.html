@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2 style= "text-align: center">Select a muscle group from the menu to view exercises.</h2>
+    <nav>
+        <form action="/legs" method="get">
+            <button type="submit">Legs</button>
+        </form>
+        <form action="/chest" method="get">
+            <button type="submit">Chest</button>
+        </form>
+        <form action="/shoulders" method="get">
+            <button type="submit">Shoulders</button>
+        </form>
+        <form action="/arms" method="get">
+            <button type="submit">Arms</button>
+        </form>
+        <form action="/core" method="get">
+            <button type="submit">Core</button>
+        </form>
+        <form action="/back" method="get">
+            <button type="submit">Back</button>
+        </form>
+        <form action="/neck" method="get">
+            <button type="submit">Neck</button>
+        </form>
+    </nav>
+{% endblock %}

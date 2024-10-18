@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BodyWork</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="static/js/script.js" defer></script>
+</head>
+<body class="light-theme">
+
+    <header>
+        <div style="text-align:left">
+            <button id="homeButton" onclick="location.href='/'">Home</button>
+        </div>
+        <h1 style="text-align:center">BodyWork</h1>
+        <div class="theme-toggle" style="position:absolute; top:20px; right:20px;">
+            <label class="switch">
+                <input type="checkbox" id="themeSwitcher">
+                <span class="slider round"></span>
+            </label>
+            <span>Dark Mode</span>
+        </div>
+    </header>
+
+    <main id="content">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Workout App. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

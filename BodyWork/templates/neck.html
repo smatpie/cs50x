@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>Neck Exercises</h2>
+    <nav>
+        <form method="POST" action="/fetch">
+            <label for="exercise">Choose an exercise:</label>
+            <div class="button-container">
+                {% for name in names %}
+                    <button class="button-link" type="submit" name="exercise" value="{{ name }}">{{ name }}</button>
+                {% endfor %}
+            </div>
+        </form>
+    </nav>
+{% endblock %}
